@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="title">
+  <title>Title</title>
+  <body>
+    <table>
+      <title>Table title (HTML table with merged cells)</title>
+      <tgroup cols="3">
+        <colspec colname="col1"/>
+        <colspec colname="col2"/>
+        <colspec colname="col3"/>
+        <thead>
+          <row>
+            <entry>First Header</entry>
+            <entry>Second Header</entry>
+            <entry>Third Header</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Table cell</entry>
+            <entry nameend="col3" namest="col2">Merged cell</entry>
+          </row>
+          <row>
+            <entry>Table cell</entry>
+            <entry>Table cell</entry>
+            <entry>Table cell</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table>
+      <title>Table title (Simple Markdown table)</title>
+      <tgroup cols="3">
+        <colspec colname="col1"/>
+        <colspec colname="col2"/>
+        <colspec colname="col3"/>
+        <thead>
+          <row>
+            <entry>First Header</entry>
+            <entry align="center">Second Header</entry>
+            <entry align="right">Third Header</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Content</entry>
+            <entry align="center" nameend="col3" namest="col2">
+              <i>Long Cell</i>
+            </entry>
+          </row>
+          <row>
+            <entry>Content</entry>
+            <entry align="center">
+              <b>Cell</b>
+            </entry>
+            <entry align="right">Cell</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>
